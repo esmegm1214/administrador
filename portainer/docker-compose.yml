@@ -12,7 +12,7 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock  # Permite gestionar Docker
-      - /docker/data/portainer-data:/data  # Volumen persistente
+      - /home/dashcloudbi/docker/datos/portainer:/data  # Volumen persistente
     networks:
       - netadmin
 networks:
