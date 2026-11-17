@@ -15,8 +15,8 @@ services:
 
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /docker/data/npm:/data
-      - /docker/data/npm/letsencrypt:/etc/letsencrypt
+      - /home/dashcloudbi/docker/datos/npm:/data
+      - /home/dashcloudbi/docker/datos/npm/letsencrypt:/etc/letsencrypt
 networks:
       - netadmin
 networks:
