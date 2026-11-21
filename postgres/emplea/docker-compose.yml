@@ -1,7 +1,7 @@
 services:
-  postgres:
+  postgres_emplea:
     image: postgres:17
-    container_name: postgres_admin_emplea
+    container_name: postgres_emplea
     restart: unless-stopped
 
     environment:
@@ -20,6 +20,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+      start_period: 10s
 
     logging:
       driver: json-file
